@@ -1,0 +1,293 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Avenir';
+  height: 100%;
+  overflow: hidden;
+}
+
+.welcome {
+  text-align: left;
+  bottom: 150px;
+  top: 180px;
+  margin: 50px;
+  position: relative;
+}
+
+.welcome h1 {
+  margin: 10px 60px;
+  min-width: 400px;
+  max-width: 900px;
+  color: white;
+  font-size: min(max(22px, 4vw), 50px);
+  text-shadow: 1px 1px rgba(148, 148, 148, 0.651);
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  border: 2px solid white;
+  position: fixed;
+  height: 80px;
+  top: 0px;
+}
+
+.logo_large:hover, .logo_small:hover {
+  cursor: pointer;
+}
+
+.LogIn-Area {
+  float: right;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  right: 50px;
+}
+
+.LogIn-Button {
+background-color: #84918A;
+padding: 10px 30px;
+margin: 5px;
+color: white;
+font-size: 16px;
+border: 1.6px solid #84918A;
+border-radius: 0px;
+text-decoration: none;
+display: inline-block;
+}
+
+.LogIn-Button:hover {
+  background-color: #84918A;
+  padding: 10px 30px;
+  margin: 5px;
+  color: white;
+  font-size: 16px;
+  border: 2.6px solid #84918A;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.SignUp-Button {
+  background-color: white;
+  padding: 10px 30px;
+  margin: 10px;
+  color: #84918A;
+  font-size: 16px;
+  border: 1.6px solid #84918A;
+  border-radius: 0px;
+  }
+  
+.SignUp-Button:hover {
+  background-color: #84918A;
+  padding: 10px 30px;
+  margin: 10px;
+  color: white;
+  font-size: 16px;
+  border: 1.6px solid #84918A;
+  border-radius: 0px;
+  cursor: pointer;
+  }
+
+.logo_large {
+  display: inline-block;
+  margin-left: 40px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.logo_small {
+  display: inline-block;
+  margin-left: 40px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  
+}
+
+footer .info-container p {
+  display: inline-block;
+  font-size: 12px;
+  color: white;
+}
+
+p {
+  color: white;
+  padding: 3px;
+  margin: 5px;
+
+}
+
+footer .info-container a:link, a:visited {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 3px;
+  margin: 5px;
+}
+
+footer .info-container a:hover, a:active {
+  text-decoration: none;
+  color: #84918A;
+  display: inline-block;
+  text-align: center;
+  padding: 3px;
+  margin: 5px;
+}
+
+.info-container {
+  margin: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .logo_large {
+     display: inline-block;
+   }
+ 
+   .logo_small {
+     display: none;
+   }
+   
+ }
+
+@media only screen and (max-width: 768px) {
+  
+ .logo_large {
+    display: none;
+  }
+
+  .logo_small {
+    display: inline-block;
+  }
+
+  .welcome h1 {
+    margin: 10px 10px;
+    color: white;
+    text-shadow: 0.5px 0.5px rgba(148, 148, 148, 0.651);
+  }
+  
+}
+
+.LogIn-PopUp-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 1;
+  }
+
+.LogIn-PopUp {
+  width: 450px;
+  height: 300px;
+  background-color: white;
+  border-radius: 3px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  margin: 30px;
+}
+
+.LogIn-PopUp input[type="name"], input[type="password"] {
+  width: 60%;
+  display: block;
+  margin: 10px auto;
+  padding: 15px;
+}
+
+.LogIn-close {
+  position: absolute;
+  top: 5px;
+  right: 14px;
+  font-size: 25px;
+  transform: rotate(45deg);
+  color: #707070;
+  cursor: pointer;
+}
+
+.LogIn-PopUp form a:link, a:visited {
+  color: #84918A;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  position: absolute;
+  right: 20%;
+}
+
+.LogIn-PopUp form a:hover, a:active {
+  text-decoration: none;
+  color: #84918A;
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  position: absolute;
+  right: 20%;
+}
+
+.SignUp-PopUp-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 1;
+  }
+
+.SignUp-PopUp {
+  width: 450px;
+  height: 480px;
+  background-color: white;
+  border-radius: 3px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  margin: 30px;
+}
+
+.SignUp-PopUp input[type="name"], input[type="password"] {
+  width: 60%;
+  display: block;
+  margin: 10px auto;
+  padding: 15px;
+}
+
+.SignUp-close {
+  position: absolute;
+  top: 5px;
+  right: 14px;
+  font-size: 25px;
+  transform: rotate(45deg);
+  color: #707070;
+  cursor: pointer;
+}
+
+.SignUp-PopUp p {
+  color: #707070;
+  font-size: 14px;
+}
+
+.SignUp-PopUp label[for="country"] {
+  font-size: 14px;
+  color: #707070;
+}
